@@ -1,0 +1,174 @@
+.body{
+    background-image: url("https://cdn.pixabay.com/photo/2016/04/15/04/02/water-1330252_960_720.jpg");
+    background-repeat:none;
+    background-attachment: scroll;
+    
+}
+body{
+    margin:0;
+}
+    *{box-sizing: border-box}
+.forms{
+    border-radius: 5px;
+    border: 2px solid blue;
+    background-color: aqua;
+    padding: 25px;
+    }
+
+.ln25
+{
+    float: left;
+    width: 25%;
+    padding: 25px;
+
+}
+
+.ln75{
+    
+    width:75%;
+    padding:25px;
+}
+label{
+    
+    
+    padding:10px 10px 10px 0;
+    color: black;
+    display: inline-block;
+    
+}
+input[type=text],textarea,input[type=email],input[type=password]{
+    width:100%;
+    padding:15px;
+    border: 2px solid gray;
+    resize: vertical;
+    margin-top: 9px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.boxing{
+    width: 97%;
+    height:10%;
+    background-image: url("https://thumbs.dreamstime.com/b/healthy-food-background-collection-different-fruits-berries-vegetables-45074691.jpg");
+
+    float: left;
+    
+    
+}
+table{
+    width: 25%
+
+}
+th,td{
+    border: 5px;
+    border-color: mediumorchid;
+    padding:10px; 
+}
+tr:nth-child(odd){
+    background-color: khaki;
+}
+th{
+    background-color: lawngreen;
+    color: blueviolet;
+}
+
+input[type=submit]
+{
+    background-color: chartreuse;
+    padding:25px;
+    width:100px;
+    color: aliceblue;
+    float: right;
+    
+}
+input[type=submit]:hover{
+    background-color: darkgreen;
+}
+.button
+{
+    background-color: crimson;
+    padding:25px;
+    color: aliceblue;
+    width:100px;
+
+    float: right;
+    
+}
+.button:hover{
+    background-color: brown;
+}
+.button1{
+    background-color: blueviolet;
+    padding:25px;
+    width:100px;
+    float:right;
+    color: aliceblue;
+}
+.button1:hover{
+    background-color: rgb(32, 5, 58);
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+    border:0;
+    width:100%;
+    overflow: hidden;
+    background-color: saddlebrown;
+    
+
+}
+ ul li{
+    float: right;
+}
+ul li.left{
+    float: inherit;
+    
+}
+
+ul li a{ 
+    display: block;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+ul li a:hover:not(.active){
+    background-color: lime;
+    color: black;
+}
+ .size{
+     padding:0 20px;
+ }
+ .p1{
+    
+     color: blue;
+     padding: 0 30px;
+ }
+
+
+@media screen and (max-width:600px){
+    .ln25,.ln75{
+        width: 100%;
+        margin-top: 0;
+    }
+    input[type=submit],.button,.button1{
+        width:100%;
+        margin-top:6px;
+    }
+   ul li a :hover:not(.active),ul li a.active{
+    float: none;
+
+    }
+    
+    
+}
+@media screen and (min-width:400px)
+{
+    .body{
+        background-image: url("https://cdn.pixabay.com/photo/2016/04/15/04/02/water-1330252_960_720.jpg")
+    }
+}
